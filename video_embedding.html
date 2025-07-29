@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Video | EduPlatform</title>
+  <link rel="stylesheet" href="video_embedding.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">EduPlatform</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="mycourses.html">My Courses</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="video_embedding.html" class="active">Video Embedding</a></li>
+      <li><a href="ebook.html">E-Book</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Course Video Player</h1>
+    <p class="description">Select a video lesson related to the course:</p>
+
+    <div class="video-wrapper" id="videoWrapper">
+      <iframe id="courseVideo" src="https://www.youtube.com/embed/Bpmyy2nX_Pg" allowfullscreen loading="lazy" title="Course Video"></iframe>
+    </div>
+
+    <div class="video-links">
+      <a href="#" data-video="https://www.youtube.com/embed/Bpmyy2nX_Pg">Introduction to Web Development</a>
+      <a href="#" data-video="https://www.youtube.com/embed/pQN-pnXPaVg">HTML Basics</a>
+      <a href="#" data-video="https://www.youtube.com/embed/0afZj1G0BIE">CSS Fundamentals</a>
+      <a href="#" data-video="https://www.youtube.com/embed/hdI2bqOjy3c">JavaScript Basics</a>
+      <a href="#" data-video="https://www.youtube.com/embed/0DGmnrkjhNs">Advanced JavaScript</a>
+    </div>
+  </main>
+
+  <script src="video_embedding.js"></script>
+</body>
+</html>

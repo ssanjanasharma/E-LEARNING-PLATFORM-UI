@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Settings | EduPlatform</title>
+  <link rel="stylesheet" href="setting.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="settings-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">EduPlatform</div>
+      <ul>
+        <li><a href="overview.html"><span>🏠</span> Overview</a></li>
+        <li><a href="ebook.html"><span>📖</span> E-Book</a></li>
+        <li><a href="mycourses.html"><span>📚</span> My Courses</a></li>
+        <li><a href="progress.html"><span>🚀</span> Progress</a></li>
+        <li><a href="video_embedding.html"><span>🎥</span> Video Embedding</a></li>
+        <li class="active"><a href="setting.html" style="color: inherit; text-decoration:none;"><span>⚙️</span> Settings</a></li>
+        <li><a href="chatbot.html"><span>🤖</span> Chatbot</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="settings-main">
+      <header><h1>User Settings</h1></header>
+
+      <form id="settings-form" class="settings-form" novalidate>
+        <div class="profile-pic-section">
+          <label for="profile-pic-upload" class="profile-pic-label" tabindex="0">
+            <img src="https://via.placeholder.com/120?text=Profile" alt="Profile Picture" id="profile-pic" class="profile-pic"/>
+            <div class="upload-overlay">Change Picture</div>
+          </label>
+          <input type="file" id="profile-pic-upload" accept="image/*" hidden />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter phone no." pattern="^\+?[\d\s\-]{7,15}$" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter new password" minlength="6" />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm New Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password" minlength="6" />
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn-save">Save Changes</button>
+        </div>
+
+        <div id="form-msg" role="alert" class="form-message"></div>
+      </form>
+    </main>
+  </div>
+
+  <script src="setting.js"></script>
+</body>
+</html>

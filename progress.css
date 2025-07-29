@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fb;
+  color: #232345;
+}
+
+.navbar {
+  background: #fff;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 8px #a0a0e040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #483ac7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #4a4a70;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #8e5ccb;
+}
+
+.header-banner {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.progress-list {
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #b8bdec18;
+  padding: 2rem 2.5rem;
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.progress-item:last-child {
+  margin-bottom: 0;
+}
+
+.progress-item-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #6a5dfc;
+}
+
+.progress-bar {
+  background: #ecebfc;
+  border-radius: 8px;
+  width: 100%;
+  height: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.progress-fill {
+  background: linear-gradient(90deg,#8ec5fc,#6a5dfc);
+  height: 100%;
+  border-radius: 8px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-value {
+  font-size: 1rem;
+  color: #3b3a5c;
+  text-align: right;
+  margin-top: 4px;
+  font-weight: 500;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eduhouse Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Eduhouse</div>
+            <nav>
+                <ul>
+                    <li>🏠Overview</li>
+                    <li><a href="ebook.html" style="text-decoration:none; color: inherit;"><span>📖</span> E-Book</a>
+                    </li>
+                    <li><a href="mycourses.html" style="text-decoration:none; color: inherit;"><span>📚</span> My
+                            Courses</a></li>
+                    <li><a href="progress.html" style="text-decoration:none; color: inherit;"><span>🚀</span>
+                            Progress</a></li>
+                    <li><a href="video_embedding.html" style="text-decoration:none; color: inherit;"><span>🎥</span>
+                            Video Embedding</a></li>
+                    <li><a href="chatbot.html" style="text-decoration:none; color: inherit;"><span>🤖</span> Chatbot</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="sidebar-bottom">
+                <ul>
+                    <li>
+                        <a href="profile.html"
+                            style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:14px;">
+                            <span>👤</span>Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html"
+                            style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:14px;">
+                            <span>⚙️</span>Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signup_login.html"
+                            style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:14px;">
+                            <span>🚪</span>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </aside>
+        <!-- Main Dashboard Content -->
+        <main>
+            <!-- Top Bar -->
+            <header>
+                <input type="text" placeholder="Search here..." class="searchbar" />
+                <div class="user-profile">
+                    <img src="pfp.jpg" alt="User Avatar">
+                </div>
+            </header>
+            <!-- Content Sections -->
+            <section class="dashboard-content">
+                <!-- Left: Course Progress -->
+                <div class="dashboard-section">
+                    <h3>Course in Progress</h3>
+                    <div class="course-progress-cards">
+                        <div class="course-card app-design">
+                            <h4>App Design</h4>
+                            <p>Learn App design from our expert trainer</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20%"></div>
+                            </div>
+                            <span>Progress: 20%</span>
+                        </div>
+                        <div class="course-card web-design">
+                            <h4>Web Design</h4>
+                            <p>Learn web design from our expert trainer</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%; background: #FBBF24"></div>
+                            </div>
+                            <span>Progress: 80%</span>
+                        </div>
+                        <div class="course-card dashboard">
+                            <h4>Dashboard</h4>
+                            <p>Learn Typography from our expert trainer</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%; background: #38BDF8"></div>
+                            </div>
+                            <span>Progress: 50%</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Subscription -->
+                <div class="dashboard-section side-panel">
+                    <div class="subscription-card">
+                        <div class="piggy-img">🐷️✨</div>
+                        <p>You have <b>5 days</b> left on your subscription</p>
+                        <button class="upgrade-btn" onclick="window.location.href='subscription.html'">Upgrade to Pro</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Popular Categories & Top Mentors -->
+            <section class="dashboard-bottom">
+                <!-- Categories -->
+                <div class="categories-card">
+                    <h4>Popular Categories</h4>
+                    <ul class="categories-list">
+                        <li>
+                            <span class="cat-icon uiux"></span>
+                            UI/UX Design
+                            <span class="cat-count">18 Course</span>
+                        </li>
+                        <li>
+                            <span class="cat-icon marketing"></span>
+                            Marketing
+                            <span class="cat-count">34 Course</span>
+                        </li>
+                        <li>
+                            <span class="cat-icon dev"></span>
+                            Development
+                            <span class="cat-count">126 Course</span>
+                        </li>
+                        <li>
+                            <span class="cat-icon business"></span>
+                            Business
+                            <span class="cat-count">213 Course</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mentors -->
+                <div class="bottom-section mentors-section">
+                    <h3>Top Mentors</h3>
+                    <div class="mentors-list">
+                        <div class="mentor">
+                            <img src="https://randomuser.me/api/portraits/men/36.jpg" />
+                            <div class="mentor-details">
+                                <strong>Shine Smith</strong>
+                                <span class="mentor-title">UI/UX Designer</span>
+                                <span class="mentor-stats">18 Course • 1,200 Follower</span>
+                            </div>
+                            <button class="mentor-follow">Follow</button>
+                            <button class="mentor-actions" aria-label="More options">&#x22EE;</button>
+                        </div>
+                        <div class="mentor">
+                            <img src="https://randomuser.me/api/portraits/men/34.jpg" />
+                            <div class="mentor-details">
+                                <strong>Mikel</strong>
+                                <span class="mentor-title">Marketer</span>
+                                <span class="mentor-stats">24 Course • 900 Follower</span>
+                            </div>
+                            <button class="mentor-follow">Follow</button>
+                            <button class="mentor-actions" aria-label="More options">&#x22EE;</button>
+                        </div>
+                        <div class="mentor">
+                            <img src="https://randomuser.me/api/portraits/men/35.jpg" />
+                            <div class="mentor-details">
+                                <strong>Tohid Golakar</strong>
+                                <span class="mentor-title">Android Developer</span>
+                                <span class="mentor-stats">85 Course • 1,550 Follower</span>
+                            </div>
+                            <button class="mentor-follow">Follow</button>
+                            <button class="mentor-actions" aria-label="More options">&#x22EE;</button>
+                        </div>
+                        <div class="mentor">
+                            <img src="https://randomuser.me/api/portraits/men/37.jpg" />
+                            <div class="mentor-details">
+                                <strong>Md Sakib</strong>
+                                <span class="mentor-title">Frontend Developer</span>
+                                <span class="mentor-stats">85 Course • 3,400 Follower</span>
+                            </div>
+                            <button class="mentor-follow">Follow</button>
+                            <button class="mentor-actions" aria-label="More options">&#x22EE;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
